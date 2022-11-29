@@ -6,8 +6,7 @@ $array = json_decode($data, true);
 foreach($array as $row)
 {
 $sql = "INSERT INTO employee (id, name, gender, designation)
-VALUES('".$row["id"]."','".$row["name"]."','".$row["gender"]."','
-".$row["designation"]."')";
+VALUES('".$row["id"]."','".$row["name"]."','".$row["gender"]."','".$row["designation"]."')";
 
 mysqli_query($connect,$sql);
 }
